@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BursaryBridge - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo-area">
+        <h1>🎓 BursaryBridge</h1>
+        <p>connecting students to funding • South Africa</p>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">📖 About Us</a>
+        <a href="services.html">⚙️ Services</a>
+        <a href="enquiry.html">✉️ Enquiry</a>
+        <a href="contact.html" class="active">📞 Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>📞 Contact Us</h2>
+    
+    <div class="two-column">
+        <div class="contact-info">
+            <h3>📍 Head Office</h3>
+            <p>🏢 27 St George's Mall, Cape Town, 8001<br>🇿🇦 South Africa</p>
+            <p>📞 +27 (0)21 123 4567<br>📧 hello@bursarybridge.co.za</p>
+            <p>🕒 Mon–Fri: 9am – 5pm</p>
+            <hr>
+            <h3>📱 Social & Support</h3>
+            <p>💬 WhatsApp: +27 67 890 1234</p>
+            <p>🐦 Twitter: @BursaryBridge_SA</p>
+            <p>📘 Facebook: BursaryBridgeSA</p>
+            <p>📧 support@bursarybridge.co.za</p>
+        </div>
+        
+        <div class="contact-form">
+            <h3>📩 Send us a message</h3>
+            <div id="contactSuccess" class="alert">📬 Message sent! Our team will get back to you shortly.</div>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="contactName" placeholder="Your name *" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="contactEmail" placeholder="Your email *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="contactSubject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" id="contactMsg" placeholder="How can we assist you? *" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message →</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 BursaryBridge — Bridging South African students to brighter futures.</p>
+    <p>Student Number: ST10453126 | WEDE5030 | Part 2</p>
+</footer>
+
+<script>
+    const contactForm = document.getElementById('contactForm');
+    const successDiv = document.getElementById('contactSuccess');
+
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('contactName').value.trim();
+        const email = document.getElementById('contactEmail').value.trim();
+        const msg = document.getElementById('contactMsg').value.trim();
+        
+        if (!name || !email || !msg) {
+            alert("Please complete all contact fields.");
+            return;
+        }
+        if (!email.includes('@')) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+        
+        successDiv.style.display = 'block';
+        contactForm.reset();
+        
+        setTimeout(() => {
+            successDiv.style.display = 'none';
+        }, 4000);
+    });
+</script>
+
+</body>
+</html>

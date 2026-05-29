@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BursaryBridge - Enquiry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo-area">
+        <h1>🎓 BursaryBridge</h1>
+        <p>connecting students to funding • South Africa</p>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">📖 About Us</a>
+        <a href="services.html">⚙️ Services</a>
+        <a href="enquiry.html" class="active">✉️ Enquiry</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>✉️ Make an Enquiry</h2>
+    <p>Have a question about a specific bursary, eligibility, or partnership? Let us know.</p>
+    
+    <div id="enquirySuccess" class="alert">✅ Your enquiry has been sent! We'll respond within 48 hours.</div>
+    
+    <div class="form-card">
+        <form id="enquiryForm">
+            <div class="form-group">
+                <input type="text" id="enqName" placeholder="Full name *" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="enqEmail" placeholder="Email address *" required>
+            </div>
+            <div class="form-group">
+                <select id="enqTopic">
+                    <option value="Bursary inquiry">Bursary inquiry</option>
+                    <option value="Application help">Application help</option>
+                    <option value="Partnership">Partnership / Sponsor</option>
+                    <option value="Technical issue">Technical issue</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea rows="4" id="enqMessage" placeholder="Please describe your enquiry in detail... *" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">📨 Submit Enquiry</button>
+        </form>
+    </div>
+    
+    <div class="info-box">
+        <p><strong>📢 Quick response:</strong> Typical reply within 1 business day. We value your questions!</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 BursaryBridge — Bridging South African students to brighter futures.</p>
+    <p>Student Number: ST10453126 | WEDE5030 | Part 2</p>
+</footer>
+
+<script>
+    const enquiryForm = document.getElementById('enquiryForm');
+    const successDiv = document.getElementById('enquirySuccess');
+
+    enquiryForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('enqName').value.trim();
+        const email = document.getElementById('enqEmail').value.trim();
+        const message = document.getElementById('enqMessage').value.trim();
+        
+        if (!name || !email || !message) {
+            alert("Please fill in all required fields (Name, Email, Message).");
+            return;
+        }
+        if (!email.includes('@')) {
+            alert("Please provide a valid email address.");
+            return;
+        }
+        
+        successDiv.style.display = 'block';
+        enquiryForm.reset();
+        
+        setTimeout(() => {
+            successDiv.style.display = 'none';
+        }, 4000);
+    });
+</script>
+
+</body>
+</html>

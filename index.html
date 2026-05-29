@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BursaryBridge - Home</title>
+    <style>
+        /* student style - simple and basic */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            min-height: 500px;
+        }
+        .hero {
+            background-color: #e6f2ff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #004d99;
+        }
+        .bursary-list {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .bursary-item {
+            background-color: #f9f9f9;
+            padding: 12px;
+            margin: 10px 0;
+            border-left: 4px solid #0066cc;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎓 BursaryBridge</h1>
+    <p>Find funding for your future!</p>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="services.html">Services</a> |
+        <a href="enquiry.html">Enquiry</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="hero">
+        <h2>Find Your Future with Bursaries</h2>
+        <p>Helping South African students access funding opportunities easily.</p>
+        <button onclick="window.location.href='services.html'">View Bursaries</button>
+    </div>
+
+    <div class="bursary-list">
+        <h3>🔥 Featured Bursaries (2026)</h3>
+        
+        <div class="bursary-item">
+            <strong>📐 Engineering Bursary</strong><br>
+            Location: Johannesburg | Amount: Full tuition + allowance<br>
+            Closing date: 31 August 2026
+        </div>
+        
+        <div class="bursary-item">
+            <strong>💻 IT Bursary</strong><br>
+            Location: Cape Town | Includes laptop and mentorship
+        </div>
+        
+        <div class="bursary-item">
+            <strong>🩺 Medical Bursary</strong><br>
+            Location: Durban | For students from disadvantaged backgrounds
+        </div>
+        
+        <div class="bursary-item">
+            <strong>📊 Business & Finance</strong><br>
+            Location: Pretoria | Work-back opportunity available
+        </div>
+    </div>
+    
+    <!-- i tried to add a search box but it doesnt work without js -->
+    <div style="margin-top: 20px; background:#ddd; padding:10px; border-radius:8px;">
+        <p><strong>Search:</strong> (this is just for design)</p>
+        <input type="text" placeholder="Search bursaries..." style="width:100%; padding:8px;">
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 BursaryBridge - Helping SA students</p>
+    <p>Student Number: ST10453126 | WEDE5020</p>
+</footer>
+
+</body>
+</html>
