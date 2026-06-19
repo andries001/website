@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 /* ========================================
    BursaryBridge - External Stylesheet
    Student: ST10453126
    Module: WEDE5030
    Part: 3 (Fully Updated)
    ======================================== */
+=======
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
 
 /* ========== 2.2 CSS RESET & BASE STYLES ========== */
 * {
@@ -261,6 +264,10 @@ input:hover, textarea:hover, select:hover {
     padding: 0.8rem 1.2rem;
     border-radius: 40px;
     margin-bottom: 1rem;
+<<<<<<< HEAD
+=======
+    display: none;
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
     border-left: 4px solid #28a745;
 }
 
@@ -306,6 +313,7 @@ hr {
     border-radius: 40px;
 }
 
+<<<<<<< HEAD
 /* ========================================
    PART 3 ADDITIONS
    ======================================== */
@@ -595,6 +603,8 @@ hr {
     color: #666;
 }
 
+=======
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
 /* ========== 3.1 MEDIA QUERIES - RESPONSIVE DESIGN ========== */
 
 /* Tablet breakpoint (768px - 1024px) */
@@ -619,19 +629,30 @@ hr {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 1.2rem;
     }
+<<<<<<< HEAD
     
     .modal-content {
         margin: 15% auto;
         padding: 2rem;
     }
+=======
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
 }
 
 /* Mobile breakpoint (up to 767px) */
 @media screen and (max-width: 767px) {
+<<<<<<< HEAD
+=======
+    /* Single column layout */
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
     .container {
         padding: 1rem;
     }
     
+<<<<<<< HEAD
+=======
+    /* Stack navigation vertically on mobile */
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
     .nav-links {
         flex-direction: column;
         gap: 0.3rem;
@@ -643,6 +664,10 @@ hr {
         padding: 0.5rem 0;
     }
     
+<<<<<<< HEAD
+=======
+    /* Smaller fonts on mobile */
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
     body {
         font-size: 14px;
     }
@@ -663,31 +688,52 @@ hr {
         font-size: 1.4rem;
     }
     
+<<<<<<< HEAD
+=======
+    /* Grid becomes single column */
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
     .card-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
     
+<<<<<<< HEAD
+=======
+    /* Two column layout stacks */
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
     .two-column {
         flex-direction: column;
         gap: 1rem;
     }
     
+<<<<<<< HEAD
+=======
+    /* Form padding reduced */
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
     .form-card, .contact-info, .contact-form {
         padding: 1rem;
     }
     
+<<<<<<< HEAD
+=======
+    /* Smaller buttons on mobile */
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
     .btn-primary, button[type="submit"] {
         padding: 0.6rem 1.5rem;
         width: 100%;
         text-align: center;
     }
     
+<<<<<<< HEAD
+=======
+    /* Footer text smaller */
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
     footer {
         padding: 1rem;
         font-size: 0.75rem;
     }
     
+<<<<<<< HEAD
     .modal-content {
         margin: 20% 1rem;
         padding: 1.5rem;
@@ -736,6 +782,17 @@ hr {
     
     .accordion-header::after {
         right: 1rem;
+=======
+    /* Service cards full width */
+    .service-card {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    /* Reduce spacing */
+    .bursary-item {
+        padding: 0.8rem;
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
     }
 }
 
@@ -764,6 +821,7 @@ hr {
     input, textarea, select {
         padding: 10px 12px;
     }
+<<<<<<< HEAD
     
     .gallery-grid {
         grid-template-columns: 1fr;
@@ -772,6 +830,8 @@ hr {
     .gallery-item img {
         height: 180px;
     }
+=======
+>>>>>>> b421a6c1bc81e5ae2ab3eb9160d897c0df40b609
 }
 
 /* ========== UTILITY CLASSES ========== */
