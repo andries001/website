@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ========== SEO META TAGS ========== -->
+    <title>Contact BursaryBridge - Get In Touch</title>
+    <meta name="title" content="Contact BursaryBridge - Get In Touch">
+    <meta name="description" content="Contact BursaryBridge for help with bursaries. Visit our office in Cape Town or send us a message online.">
+    <meta name="keywords" content="contact bursarybridge, bursary help, student funding support, Cape Town">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bursarybridge.co.za/contact.html">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Contact BursaryBridge - Get In Touch">
+    <meta property="og:description" content="Contact BursaryBridge for help with bursaries. Visit our office in Cape Town or send us a message online.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bursarybridge.co.za/contact.html">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo-area">
+        <h1>🎓 BursaryBridge</h1>
+        <p>connecting students to funding • South Africa</p>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">📖 About Us</a>
+        <a href="services.html">⚙️ Services</a>
+        <a href="enquiry.html">✉️ Enquiry</a>
+        <a href="contact.html" class="active">📞 Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>📞 Contact Us</h2>
+    
+    <div class="two-column">
+        <!-- ========== CONTACT INFO (EXISTING) ========== -->
+        <div class="contact-info">
+            <h3>📍 Head Office</h3>
+            <p>🏢 27 St George's Mall, Cape Town, 8001<br>🇿🇦 South Africa</p>
+            <p>📞 +27 (0)21 123 4567<br>📧 hello@bursarybridge.co.za</p>
+            <p>🕒 Mon–Fri: 9am – 5pm</p>
+            <hr>
+            <h3>📱 Social & Support</h3>
+            <p>💬 WhatsApp: +27 67 890 1234</p>
+            <p>🐦 Twitter: @BursaryBridge_SA</p>
+            <p>📘 Facebook: BursaryBridgeSA</p>
+            <p>📧 support@bursarybridge.co.za</p>
+        </div>
+        <div class="contact-info" style="margin-top: 1rem;">
+    <h3>📍 Find Us</h3>
+    <!-- Google Maps Embed -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.123456789!2d18.423456!3d-33.923456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc675f0c0f0f0f%3A0x1234567890abcdef!2sCape%20Town!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" 
+        width="100%" 
+        height="250" 
+        style="border:0; border-radius:12px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+        <!-- ========== ENHANCED CONTACT FORM (NEW) ========== -->
+        <div class="contact-form">
+            <h3>📩 Send us a message</h3>
+            
+            <div id="contactSuccess" class="alert" style="display:none;">
+                <h3>✅ Message Sent!</h3>
+                <p>We'll get back to you within 24 hours.</p>
+            </div>
+            
+            <div id="contactError" class="alert error" style="display:none; background:#f8d7da; color:#721c24; border-left-color:#dc3545;">
+                <h3>❌ Something Went Wrong</h3>
+                <p id="contactErrorMessage">Please try again later.</p>
+            </div>
+            
+            <form id="contactForm" onsubmit="submitContact(event)">
+                <div class="form-group">
+                    <input type="text" id="contactName" placeholder="Full Name *" required minlength="3" maxlength="50">
+                    <small class="error-message" id="cNameError"></small>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="contactEmail" placeholder="Email Address *" required>
+                    <small class="error-message" id="cEmailError"></small>
+                </div>
+                
+                <div class="form-group">
+                    <input type="tel" id="contactPhone" placeholder="Phone Number (10 digits)">
+                    <small class="error-message" id="cPhoneError"></small>
+                </div>
+                
+                <div class="form-group">
+                    <select id="contactType" required>
+                        <option value="">Select Message Type...</option>
+                        <option value="General inquiry">General Inquiry</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Complaint">Complaint</option>
+                        <option value="Partnership">Partnership Proposal</option>
+                        <option value="Volunteer">Volunteer Opportunity</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="contactSubject" placeholder="Subject">
+                </div>
+                
+                <div class="form-group">
+                    <textarea id="contactMsg" rows="5" placeholder="Your Message *" required minlength="10" maxlength="1000"></textarea>
+                    <small class="error-message" id="cMsgError"></small>
+                    <small id="contactCharCount">0 / 1000 characters</small>
+                </div>
+                
+                <button type="submit" class="btn-primary" id="contactSubmitBtn">📩 Send Message</button>
+                
+                <div id="contactLoadingSpinner" style="display:none; margin-top:1rem;">
+                    <span style="display:inline-block; width:20px; height:20px; border:3px solid #f3f3f3; border-top:3px solid #0066cc; border-radius:50%; animation:spin 0.8s linear infinite;"></span> Sending...
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 BursaryBridge — Bridging South African students to brighter futures.</p>
+    <p>Student Number: ST10453126 | WEDE5030 | Part 3</p>
+</footer>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

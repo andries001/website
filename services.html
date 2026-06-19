@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ========== SEO META TAGS ========== -->
+    <title>Bursary Services - Find Funding for Your Studies</title>
+    <meta name="title" content="Bursary Services - Find Funding for Your Studies">
+    <meta name="description" content="Explore bursary services including matching, application assistance, deadline alerts, and student webinars. Find the right funding for your studies.">
+    <meta name="keywords" content="bursary services, funding help, application assistance, bursary matching, student webinars">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bursarybridge.co.za/services.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bursary Services - Find Funding for Your Studies">
+    <meta property="og:description" content="Explore bursary services including matching, application assistance, deadline alerts, and student webinars.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bursarybridge.co.za/services.html">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo-area">
+        <h1>🎓 BursaryBridge</h1>
+        <p>connecting students to funding • South Africa</p>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">📖 About Us</a>
+        <a href="services.html" class="active">⚙️ Services</a>
+        <a href="enquiry.html">✉️ Enquiry</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>⚙️ Our Core Services</h2>
+    
+    <div class="card-grid">
+        <div class="card">
+            <div class="service-icon">🔍</div>
+            <h3>Bursary Matching</h3>
+            <p>Personalised recommendations based on your field, location, and academic level.</p>
+        </div>
+        <div class="card">
+            <div class="service-icon">📝</div>
+            <h3>Application Assistance</h3>
+            <p>Step-by-step guides, motivation letter tips, and checklist for each bursary.</p>
+        </div>
+        <div class="card">
+            <div class="service-icon">📅</div>
+            <h3>Deadline Alerts</h3>
+            <p>Email & SMS reminders so you never miss a closing date.</p>
+        </div>
+        <div class="card">
+            <div class="service-icon">🎓</div>
+            <h3>Student Webinars</h3>
+            <p>Monthly online workshops with past beneficiaries and funding experts.</p>
+        </div>
+    </div>
+    
+    <div class="coming-soon">
+        <h3>➕ Premium Services (Coming Soon!)</h3>
+        <p>One-on-one mentorship, CV reviews and interview prep for shortlisted candidates.</p>
+    </div>
+    
+    <!-- ========== DYNAMIC BURSARY SEARCH (NEW) ========== -->
+    <div class="search-section" style="background: white; padding: 1.8rem; border-radius: 20px; margin-top: 2rem;">
+        <h2>🔎 Find Your Bursary</h2>
+        <p>Search and filter bursaries by field, location, or keyword.</p>
+        
+        <div class="search-filters" style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0;">
+            <input type="text" id="searchInput" placeholder="Search bursaries..." style="flex:2; min-width:200px; padding:12px; border:1px solid #ccc; border-radius:30px;">
+            <select id="filterField" style="flex:1; min-width:150px; padding:12px; border:1px solid #ccc; border-radius:30px;">
+                <option value="all">All Fields</option>
+                <option value="engineering">Engineering</option>
+                <option value="it">IT & Computer Science</option>
+                <option value="medical">Medical & Health</option>
+                <option value="business">Business & Finance</option>
+                <option value="teaching">Teaching & Education</option>
+                <option value="agriculture">Agriculture</option>
+            </select>
+            <select id="filterLocation" style="flex:1; min-width:150px; padding:12px; border:1px solid #ccc; border-radius:30px;">
+                <option value="all">All Locations</option>
+                <option value="johannesburg">Johannesburg</option>
+                <option value="cape-town">Cape Town</option>
+                <option value="durban">Durban</option>
+                <option value="pretoria">Pretoria</option>
+                <option value="limpopo">Limpopo</option>
+            </select>
+            <button id="searchBtn" class="btn-primary" style="padding:12px 30px;">Search</button>
+        </div>
+        
+        <div id="bursaryResults" class="card-grid" style="margin-top:1rem;">
+            <!-- Bursaries will be dynamically loaded here -->
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 BursaryBridge — Bridging South African students to brighter futures.</p>
+    <p>Student Number: ST10453126 | WEDE5030 | Part 3</p>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- Additional page-specific script -->
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+# BursaryBridge robots.txt
+# Allow all crawlers to index the site
+
+User-agent: *
+Allow: /
+Disallow: /images/private/
+Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://bursarybridge.co.za/sitemap.xml

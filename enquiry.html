@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ========== SEO META TAGS ========== -->
+    <title>Enquire About Bursaries - BursaryBridge</title>
+    <meta name="title" content="Enquire About Bursaries - BursaryBridge">
+    <meta name="description" content="Have questions about bursaries? Send us an enquiry and we'll help you find the right funding for your studies.">
+    <meta name="keywords" content="bursary enquiry, student funding questions, bursary help, application support">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bursarybridge.co.za/enquiry.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Enquire About Bursaries - BursaryBridge">
+    <meta property="og:description" content="Have questions about bursaries? Send us an enquiry and we'll help you find the right funding.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bursarybridge.co.za/enquiry.html">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo-area">
+        <h1>🎓 BursaryBridge</h1>
+        <p>connecting students to funding • South Africa</p>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">📖 About Us</a>
+        <a href="services.html">⚙️ Services</a>
+        <a href="enquiry.html" class="active">✉️ Enquiry</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>✉️ Make an Enquiry</h2>
+    <p>Have a question about a specific bursary, eligibility, or partnership? Let us know.</p>
+    
+    <!-- ========== ENHANCED ENQUIRY FORM ========== -->
+    <div id="enquirySuccess" class="alert" style="display:none;">
+        <h3>✅ Enquiry Sent Successfully!</h3>
+        <p>We'll respond within 48 hours.</p>
+        <p><strong>Reference Number:</strong> <span id="refNumber"></span></p>
+    </div>
+    
+    <div id="enquiryError" class="alert error" style="display:none; background:#f8d7da; color:#721c24; border-left-color:#dc3545;">
+        <h3>❌ Something Went Wrong</h3>
+        <p id="errorMessage">Please try again later.</p>
+    </div>
+    
+    <div class="form-card">
+        <form id="enquiryForm" onsubmit="submitEnquiry(event)">
+            <div class="form-group">
+                <input type="text" id="enqName" placeholder="Full Name *" required minlength="3" maxlength="50">
+                <small class="error-message" id="nameError"></small>
+            </div>
+            <div class="form-group">
+                <input type="email" id="enqEmail" placeholder="Email Address *" required>
+                <small class="error-message" id="emailError"></small>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="enqPhone" placeholder="Phone Number (10 digits) *" required pattern="[0-9]{10}">
+                <small class="error-message" id="phoneError"></small>
+            </div>
+            <div class="form-group">
+                <select id="enqTopic" required>
+                    <option value="">Select a Topic...</option>
+                    <option value="Bursary inquiry">Bursary Inquiry</option>
+                    <option value="Application help">Application Help</option>
+                    <option value="Sponsorship">Sponsorship / Partnership</option>
+                    <option value="Volunteer">Volunteer Opportunity</option>
+                    <option value="Technical issue">Technical Issue</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea id="enqMessage" rows="5" placeholder="Your Message *" required minlength="10" maxlength="1000"></textarea>
+                <small class="error-message" id="messageError"></small>
+                <small id="charCount">0 / 1000 characters</small>
+            </div>
+            <button type="submit" class="btn-primary" id="enqSubmitBtn">📨 Submit Enquiry</button>
+            <div id="loadingSpinner" style="display:none; margin-top:1rem;">
+                <span style="display:inline-block; width:20px; height:20px; border:3px solid #f3f3f3; border-top:3px solid #0066cc; border-radius:50%; animation:spin 0.8s linear infinite;"></span> Sending...
+            </div>
+        </form>
+    </div>
+    
+    <div class="info-box">
+        <p><strong>📢 Quick response:</strong> Typical reply within 1 business day. We value your questions!</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 BursaryBridge — Bridging South African students to brighter futures.</p>
+    <p>Student Number: ST10453126 | WEDE5030 | Part 3</p>
+</footer>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

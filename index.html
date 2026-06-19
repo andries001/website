@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ========== SEO META TAGS ========== -->
+    <title>BursaryBridge - Find Bursaries in South Africa</title>
+    <meta name="title" content="BursaryBridge - Find Bursaries in South Africa">
+    <meta name="description" content="BursaryBridge helps South African students find and apply for bursaries. Find funding for engineering, IT, medical, and business studies.">
+    <meta name="keywords" content="bursaries, south africa, student funding, scholarships, study grants, university funding">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bursarybridge.co.za/">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="BursaryBridge - Find Bursaries in South Africa">
+    <meta property="og:description" content="Find funding for your studies. BursaryBridge helps South African students access bursary opportunities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bursarybridge.co.za/">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo-area">
+        <h1>🎓 BursaryBridge</h1>
+        <p>connecting students to funding • South Africa</p>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html" class="active">🏠 Home</a>
+        <a href="about.html">📖 About Us</a>
+        <a href="services.html">⚙️ Services</a>
+        <a href="enquiry.html">✉️ Enquiry</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <!-- ========== HERO SECTION ========== -->
+    <div class="hero">
+        <h2>Find Your Future with Bursaries</h2>
+        <p>Helping South African students access funding opportunities — all in one bridge.</p>
+        <a href="services.html" class="btn-primary">✨ Explore Bursaries</a>
+    </div>
+
+    <!-- ========== FEATURED BURSARIES ========== -->
+    <div class="bursary-list">
+        <h3>🔥 Featured Bursaries (2026)</h3>
+        <div class="card-grid">
+            <div class="card">
+                <h3>📐 Engineering Bursary</h3>
+                <p>Johannesburg | Full tuition + allowance. Closing: 31 Aug 2026</p>
+                <button class="btn-primary view-details" data-id="1" style="margin-top:10px;">View Details</button>
+            </div>
+            <div class="card">
+                <h3>💻 IT & Data Science</h3>
+                <p>Cape Town | Includes laptop & mentorship. Closing: 15 Sep 2026</p>
+                <button class="btn-primary view-details" data-id="2" style="margin-top:10px;">View Details</button>
+            </div>
+            <div class="card">
+                <h3>🩺 Medical & Health Sciences</h3>
+                <p>Durban | For underprivileged students. Closing: 30 Oct 2026</p>
+                <button class="btn-primary view-details" data-id="3" style="margin-top:10px;">View Details</button>
+            </div>
+            <div class="card">
+                <h3>📊 Business & Finance</h3>
+                <p>Pretoria | Work-back opportunities. Closing: 15 Nov 2026</p>
+                <button class="btn-primary view-details" data-id="4" style="margin-top:10px;">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== ACCORDION / FAQ SECTION (NEW) ========== -->
+    <div class="accordion-section" style="margin-top: 2rem; background: white; padding: 1.8rem; border-radius: 20px;">
+        <h2>❓ Frequently Asked Questions</h2>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">What is a bursary?</button>
+            <div class="accordion-body">
+                <p>A bursary is a financial award given to students to help fund their studies. Unlike a loan, it does not need to be repaid. Bursaries are usually awarded based on academic merit, financial need, or a combination of both.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">How do I apply for a bursary?</button>
+            <div class="accordion-body">
+                <p>Each bursary has different requirements. Generally, you need to submit an application form, academic records, a motivation letter, and sometimes references. Check each bursary's specific requirements on our Services page.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">Can I apply for multiple bursaries?</button>
+            <div class="accordion-body">
+                <p>Yes! You can apply for as many bursaries as you qualify for. This increases your chances of receiving funding. Just make sure you meet the requirements for each one.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">When should I start applying?</button>
+            <div class="accordion-body">
+                <p>Most bursaries open for applications between August and January for the following academic year. We recommend starting your research at least 6 months before you plan to study.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== INFO BOX ========== -->
+    <div class="info-box text-center" style="margin-top: 2rem;">
+        <h3>📢 Why BursaryBridge?</h3>
+        <p>✔️ Real-time updated bursary listings &nbsp;|&nbsp; ✔️ Free guidance &nbsp;|&nbsp; ✔️ No hidden fees</p>
+    </div>
+</main>
+
+<!-- ========== MODAL (NEW) ========== -->
+<div id="bursaryModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3 id="modalTitle">Bursary Details</h3>
+        <p><strong>Provider:</strong> <span id="modalProvider"></span></p>
+        <p><strong>Location:</strong> <span id="modalLocation"></span></p>
+        <p><strong>Description:</strong> <span id="modalDescription"></span></p>
+        <p><strong>Closing Date:</strong> <span id="modalClosing"></span></p>
+        <br>
+        <a href="enquiry.html" class="btn-primary">Apply Now</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 BursaryBridge — Bridging South African students to brighter futures.</p>
+    <p>Student Number: ST10453126 | WEDE5030 | Part 3</p>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script src="script.js"></script>
+</body>
+</html>
